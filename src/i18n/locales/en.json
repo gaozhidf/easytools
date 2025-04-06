@@ -1,0 +1,188 @@
+{
+  "common": {
+    "success": "Success",
+    "error": "Error",
+    "copy": "Copy",
+    "preview": "Preview",
+    "result": "Result",
+    "example": "Example",
+    "yes": "Yes",
+    "no": "No",
+    "fillExample": "Fill Example",
+    "emptyInput": "Please enter content"
+  },
+  "image": {
+    "title": "Image Format Converter",
+    "description": "Convert images between different formats (JPEG, PNG, WebP, etc.). Upload an image and select the target format to convert.",
+    "example": "For example: Convert a PNG image to JPEG format to reduce file size.",
+    "select": "Select Image",
+    "convertedImage": "Converted Image",
+    "exampleMessage": "Please upload an image to convert its format"
+  },
+  "base64": {
+    "title": "Base64 Encoder/Decoder",
+    "description": "Encode and decode text using Base64. Enter text and click the corresponding button to encode or decode.",
+    "example": "For example: Convert plain text to Base64 encoding, or convert Base64 encoding back to original text.",
+    "input": {
+      "placeholder": "Enter text to encode or decode"
+    },
+    "output": {
+      "placeholder": "Encoded or decoded result will appear here"
+    },
+    "encode": "Encode",
+    "decode": "Decode",
+    "encodeError": "Encoding error, please check your input text",
+    "decodeError": "Decoding error, please ensure you've entered valid Base64 text"
+  },
+  "timestamp": {
+    "title": "Timestamp Converter",
+    "description": "Convert between Unix timestamps and human-readable dates. Enter a timestamp or select a date to convert.",
+    "example": "For example: Convert Unix timestamp to readable date format, or convert date to timestamp.",
+    "input": {
+      "placeholder": "Enter timestamp or date"
+    },
+    "toDate": "To Date",
+    "toTimestamp": "To Timestamp",
+    "localTime": "Local Time",
+    "utcTime": "UTC Time",
+    "isoTime": "ISO Time",
+    "unixTimestamp": "Unix Timestamp",
+    "millisecondTimestamp": "Millisecond Timestamp"
+  },
+  "url": {
+    "title": "URL Encoder/Decoder",
+    "description": "Encode and decode URLs. Enter a URL and click the corresponding button to encode or decode.",
+    "example": "For example: Convert URLs with special characters to encoded format, or convert encoded URLs back to original format.",
+    "input": {
+      "placeholder": "Enter URL to encode or decode"
+    },
+    "output": {
+      "placeholder": "Encoded or decoded result will appear here"
+    },
+    "encode": "Encode",
+    "decode": "Decode"
+  },
+  "md5": {
+    "title": "MD5 Hash Generator",
+    "description": "Generate MD5 hash for input text. Enter text and click generate to get the MD5 hash value.",
+    "example": "For example: Convert text to MD5 hash for data integrity verification or password storage.",
+    "input": {
+      "placeholder": "Enter text to generate MD5 hash"
+    },
+    "output": {
+      "placeholder": "MD5 hash will appear here"
+    },
+    "generate": "Generate"
+  },
+  "regex": {
+    "title": "Regular Expression Tester",
+    "description": "Test regular expression patterns. Enter a regex pattern and text to test, then click test to see matches.",
+    "example": "For example: Use regex to match email addresses, phone numbers, etc.",
+    "pattern": {
+      "label": "Regular Expression",
+      "placeholder": "Enter regular expression"
+    },
+    "flags": {
+      "label": "Flags",
+      "placeholder": "g, i, m, s, u, y"
+    },
+    "text": {
+      "label": "Test Text",
+      "placeholder": "Enter text to test"
+    },
+    "test": "Test",
+    "match": "Match",
+    "groups": "Capture Groups"
+  },
+  "color": {
+    "title": "Color Converter",
+    "description": "Convert colors between different formats (HEX, RGB, HSB). Select a color and click convert to get color values in different formats.",
+    "example": "For example: Convert HEX color values to RGB or HSB format for different design scenarios.",
+    "convert": "Convert",
+    "exampleMessage": "Example color #1890ff (blue) conversion results shown"
+  },
+  "qrcode": {
+    "title": "QR Code Generator",
+    "description": "Generate QR codes from text content. Enter text, set the QR code size, and click generate to create a QR code.",
+    "example": "For example: Generate QR codes for URLs, text messages, etc., for easy sharing and scanning.",
+    "input": {
+      "placeholder": "Enter text to generate QR code"
+    },
+    "size": {
+      "placeholder": "QR code size"
+    },
+    "generate": "Generate",
+    "download": "Download"
+  },
+  "number": {
+    "title": "Number Base Converter",
+    "description": "Convert numbers between different bases (binary, octal, decimal, hexadecimal, etc.). Enter a number and select source and target bases to convert.",
+    "example": "For example: Convert decimal numbers to hexadecimal, or binary numbers to decimal.",
+    "input": {
+      "placeholder": "Enter number to convert"
+    },
+    "convert": "Convert",
+    "invalid": "Invalid input",
+    "bases": {
+      "binary": "Binary (2)",
+      "octal": "Octal (8)",
+      "decimal": "Decimal (10)",
+      "hexadecimal": "Hexadecimal (16)",
+      "base32": "Base 32",
+      "base36": "Base 36"
+    }
+  },
+  "ip": {
+    "title": "IP Address Parser",
+    "description": "Parse IP address type, validity, and network type. Enter an IP address and click parse to get detailed information.",
+    "example": "For example: Parse IPv4 or IPv6 addresses to get address type, validity, and network type information.",
+    "input": {
+      "placeholder": "Enter IP address (e.g., 192.168.1.1)"
+    },
+    "parse": "Parse",
+    "type": "Type",
+    "valid": "Validity",
+    "networkType": "Network Type",
+    "networkTypes": {
+      "classA": "Class A",
+      "classB": "Class B",
+      "classC": "Class C",
+      "classD": "Class D",
+      "classE": "Class E",
+      "documentation": "Documentation Prefix",
+      "uniqueLocal": "Unique Local Address",
+      "linkLocal": "Link-Local Address",
+      "multicast": "Multicast Address",
+      "globalUnicast": "Global Unicast Address",
+      "unknown": "Unknown"
+    },
+    "invalid": "Invalid IP address"
+  },
+  "theme": {
+    "default": "Default Theme"
+  },
+  "json": {
+    "title": "JSON Formatter",
+    "description": "Format and minify JSON text. Enter JSON text and click the corresponding button to format or minify.",
+    "example": "For example: Format compressed JSON text into readable form, or minify formatted JSON text into compact form.",
+    "input": {
+      "placeholder": "Enter JSON text"
+    },
+    "output": {
+      "placeholder": "Formatted or minified result will appear here"
+    },
+    "format": "Format",
+    "minify": "Minify"
+  },
+  "markdown": {
+    "title": "Markdown Preview Tool",
+    "description": "Preview Markdown text rendering. Enter Markdown text and click the preview button to see the rendered result.",
+    "example": "For example: Preview Markdown text with headings, lists, tables, code blocks, etc.",
+    "input": {
+      "placeholder": "Enter Markdown text"
+    },
+    "preview": "Preview",
+    "convert": "Convert",
+    "emptyInput": "Please enter Markdown text before previewing"
+  }
+} 

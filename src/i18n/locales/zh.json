@@ -1,0 +1,193 @@
+{
+  "common": {
+    "success": "成功",
+    "error": "错误",
+    "copy": "复制",
+    "preview": "预览",
+    "result": "结果",
+    "example": "示例",
+    "yes": "是",
+    "no": "否",
+    "fillExample": "填充示例",
+    "emptyInput": "请输入内容"
+  },
+  "image": {
+    "title": "图片格式转换工具",
+    "description": "支持将图片转换为不同的格式（JPEG、PNG、WebP等）。上传图片后，选择目标格式即可进行转换。",
+    "example": "例如：将PNG格式的图片转换为JPEG格式，可以减小文件大小。",
+    "select": "选择图片",
+    "convertedImage": "转换后的图片",
+    "exampleMessage": "请上传一张图片以进行格式转换"
+  },
+  "base64": {
+    "title": "Base64 编码/解码工具",
+    "description": "支持文本的 Base64 编码和解码。输入文本后，点击相应的按钮进行编码或解码操作。",
+    "example": "例如：将普通文本转换为 Base64 编码，或将 Base64 编码转换回原始文本。",
+    "input": {
+      "placeholder": "请输入要编码或解码的文本"
+    },
+    "output": {
+      "placeholder": "编码或解码结果将显示在这里"
+    },
+    "encode": "编码",
+    "decode": "解码",
+    "encodeError": "编码错误，请检查输入文本",
+    "decodeError": "解码错误，请确保输入有效的 Base64 文本"
+  },
+  "timestamp": {
+    "title": "时间戳转换工具",
+    "description": "支持 Unix 时间戳与日期时间的相互转换。可以输入时间戳或选择日期时间进行转换。",
+    "example": "例如：将 Unix 时间戳转换为可读的日期时间格式，或将日期时间转换为时间戳。",
+    "input": {
+      "placeholder": "请输入时间戳或日期"
+    },
+    "toDate": "转日期",
+    "toTimestamp": "转时间戳",
+    "localTime": "本地时间",
+    "utcTime": "UTC时间",
+    "isoTime": "ISO时间",
+    "unixTimestamp": "Unix时间戳",
+    "millisecondTimestamp": "毫秒时间戳"
+  },
+  "url": {
+    "title": "URL 编码/解码工具",
+    "description": "支持 URL 的编码和解码。输入 URL 后，点击相应的按钮进行编码或解码操作。",
+    "example": "例如：将包含特殊字符的 URL 转换为编码格式，或将编码后的 URL 转换回原始格式。",
+    "input": {
+      "placeholder": "请输入要编码或解码的 URL"
+    },
+    "output": {
+      "placeholder": "编码或解码结果将显示在这里"
+    },
+    "encode": "编码",
+    "decode": "解码"
+  },
+  "md5": {
+    "title": "MD5 哈希工具",
+    "description": "生成输入文本的 MD5 哈希值。输入文本后，点击生成按钮即可获取 MD5 哈希值。",
+    "example": "例如：将文本转换为 MD5 哈希值，用于数据完整性验证或密码存储。",
+    "input": {
+      "placeholder": "请输入要生成 MD5 哈希值的文本"
+    },
+    "output": {
+      "placeholder": "MD5 哈希值将显示在这里"
+    },
+    "generate": "生成"
+  },
+  "regex": {
+    "title": "正则表达式测试工具",
+    "description": "测试正则表达式的匹配效果。输入正则表达式和要测试的文本，点击测试按钮即可查看匹配结果。",
+    "example": "例如：使用正则表达式匹配邮箱地址、电话号码等格式。",
+    "pattern": {
+      "label": "正则表达式",
+      "placeholder": "请输入正则表达式"
+    },
+    "flags": {
+      "label": "标志",
+      "placeholder": "g, i, m, s, u, y"
+    },
+    "text": {
+      "label": "测试文本",
+      "placeholder": "请输入要测试的文本"
+    },
+    "test": "测试",
+    "match": "匹配",
+    "groups": "捕获组"
+  },
+  "color": {
+    "title": "颜色转换工具",
+    "description": "支持颜色在不同格式（HEX、RGB、HSB）之间的转换。选择颜色后，点击转换按钮即可获取不同格式的颜色值。",
+    "example": "例如：将 HEX 颜色值转换为 RGB 或 HSB 格式，用于不同的设计场景。",
+    "convert": "转换",
+    "exampleMessage": "已显示示例颜色值 #1890ff（蓝色）的转换结果"
+  },
+  "qrcode": {
+    "title": "二维码生成工具",
+    "description": "生成文本内容的二维码。输入文本后，设置二维码大小，点击生成按钮即可生成二维码。",
+    "example": "例如：生成网址、文本信息等内容的二维码，方便分享和扫描。",
+    "input": {
+      "placeholder": "请输入要生成二维码的文本"
+    },
+    "size": {
+      "placeholder": "二维码大小"
+    },
+    "generate": "生成",
+    "download": "下载"
+  },
+  "markdown": {
+    "title": "Markdown 预览工具",
+    "description": "支持 Markdown 文本的实时预览。输入 Markdown 文本后，点击预览按钮即可查看渲染效果。",
+    "example": "例如：预览包含标题、列表、表格、代码块等 Markdown 格式的文本。",
+    "input": {
+      "placeholder": "请输入 Markdown 文本"
+    },
+    "preview": "预览",
+    "convert": "转换",
+    "emptyInput": "请输入 Markdown 文本后再预览"
+  },
+  "number": {
+    "title": "数字进制转换工具",
+    "description": "支持不同进制（二进制、八进制、十进制、十六进制等）之间的数字转换。输入数字后，选择源进制和目标进制即可进行转换。",
+    "example": "例如：将十进制数字转换为十六进制，或将二进制数字转换为十进制。",
+    "input": {
+      "placeholder": "请输入要转换的数字"
+    },
+    "convert": "转换",
+    "invalid": "无效的输入",
+    "bases": {
+      "binary": "二进制 (2)",
+      "octal": "八进制 (8)",
+      "decimal": "十进制 (10)",
+      "hexadecimal": "十六进制 (16)",
+      "base32": "三十二进制 (32)",
+      "base36": "三十六进制 (36)"
+    }
+  },
+  "ip": {
+    "title": "IP 地址解析工具",
+    "description": "解析 IP 地址的类型、有效性和网络类型。输入 IP 地址后，点击解析按钮即可获取详细信息。",
+    "example": "例如：解析 IPv4 或 IPv6 地址，获取地址类型、有效性和网络类型信息。",
+    "input": {
+      "placeholder": "请输入 IP 地址（如：192.168.1.1）"
+    },
+    "parse": "解析",
+    "type": "类型",
+    "valid": "有效性",
+    "networkType": "网络类型",
+    "networkTypes": {
+      "classA": "A类",
+      "classB": "B类",
+      "classC": "C类",
+      "classD": "D类",
+      "classE": "E类",
+      "documentation": "文档前缀",
+      "uniqueLocal": "唯一本地地址",
+      "linkLocal": "链路本地地址",
+      "multicast": "多播地址",
+      "globalUnicast": "全局单播地址",
+      "unknown": "未知"
+    },
+    "invalid": "无效的 IP 地址"
+  },
+  "theme": {
+    "default": "默认主题",
+    "dark": "暗色主题",
+    "green": "绿色主题",
+    "purple": "紫色主题",
+    "orange": "橙色主题",
+    "red": "红色主题"
+  },
+  "json": {
+    "title": "JSON 格式化工具",
+    "description": "支持 JSON 文本的格式化和压缩。输入 JSON 文本后，点击相应的按钮进行格式化或压缩操作。",
+    "example": "例如：将压缩的 JSON 文本格式化为易读的形式，或将格式化的 JSON 文本压缩为紧凑的形式。",
+    "input": {
+      "placeholder": "请输入 JSON 文本"
+    },
+    "output": {
+      "placeholder": "格式化或压缩结果将显示在这里"
+    },
+    "format": "格式化",
+    "minify": "压缩"
+  }
+} 
