@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Layout, Menu, Button, Space, Select, Drawer } from 'antd';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { getBrowserLang } from '../i18n'; // 确保这个函数可以获取浏览器语言
 import { 
   MenuFoldOutlined, 
   MenuUnfoldOutlined, 
@@ -222,7 +223,7 @@ const MainLayout: React.FC = () => {
           <Space style={{ padding: '0 16px' }}>
             <ThemeSwitch currentTheme={currentTheme} onThemeChange={handleThemeChange} />
             <Select
-              defaultValue="zh"
+              defaultValue={getBrowserLang()}
               style={{ width: 100 }}
               options={[
                 { value: 'zh', label: '中文' },
