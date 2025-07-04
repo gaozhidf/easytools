@@ -1,6 +1,5 @@
-import React from 'react';
 import '@ant-design/v5-patch-for-react-19';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './styles/markdown.css';
 import MainLayout from './components/Layout';
 import Base64Tool from './pages/Base64Tool';

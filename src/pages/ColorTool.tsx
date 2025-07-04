@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Input, Button, message, Typography, ColorPicker } from 'antd';
+import { Card, Button, message, Typography, ColorPicker } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { CopyOutlined, FileTextOutlined } from '@ant-design/icons';
 import type { Color } from 'antd/es/color-picker';
@@ -114,4 +114,4 @@ const ColorTool: React.FC = () => {
   );
 };
 
-export default ColorTool; 
+export default ColorTool;

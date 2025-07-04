@@ -1,6 +1,5 @@
 import React from 'react';
 import { Typography } from 'antd';
-import { useTranslation } from 'react-i18next';
 
 const { Title } = Typography;
 
@@ -28,8 +27,6 @@ const LogoSVG: React.FC<{ size?: number }> = ({ size = 32 }) => (
 );
 
 const Logo: React.FC = () => {
-  const { t } = useTranslation();
-
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
       <LogoSVG />
