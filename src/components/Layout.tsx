@@ -122,6 +122,11 @@ const MainLayout: React.FC = () => {
       key: '/md5',
       label: labelWithTooltip(t('md5.title')),
       icon: <SafetyCertificateOutlined />
+    },
+    {
+      key: '/codeformat',
+      label: labelWithTooltip(t('codeformat.title')),
+      icon: <FileTextOutlined />
     }
   ];
 

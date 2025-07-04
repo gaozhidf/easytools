@@ -190,5 +190,12 @@
     },
     "format": "格式化",
     "minify": "压缩"
+  },
+  "codeformat": {
+    "title": "代码格式化工具",
+    "description": "支持 Python、SQL 等代码格式化",
+    "format": "格式化",
+    "inputPlaceholder": "请输入代码...",
+    "outputPlaceholder": "格式化结果..."
   }
 }

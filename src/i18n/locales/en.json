@@ -185,5 +185,12 @@
     "preview": "Preview",
     "convert": "Convert",
     "emptyInput": "Please enter Markdown text before previewing"
+  },
+  "codeformat": {
+    "title": "Code Formatter",
+    "description": "Supports formatting for Python, SQL, etc.",
+    "format": "Format",
+    "inputPlaceholder": "Enter code...",
+    "outputPlaceholder": "Formatted result..."
   }
 }
