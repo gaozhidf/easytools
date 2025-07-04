@@ -1,5 +1,6 @@
 {
   "common": {
+    "siteTitle": "EasyTools - Handy Online Tools",
     "success": "Success",
     "error": "Error",
     "copy": "Copy",
@@ -185,4 +186,4 @@
     "convert": "Convert",
     "emptyInput": "Please enter Markdown text before previewing"
   }
-} 
+}

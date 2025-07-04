@@ -1,5 +1,6 @@
 {
   "common": {
+    "siteTitle": "EasyTools - 便捷实用的在线工具集",
     "success": "成功",
     "error": "错误",
     "copy": "复制",
@@ -190,4 +191,4 @@
     "format": "格式化",
     "minify": "压缩"
   }
-} 
+}

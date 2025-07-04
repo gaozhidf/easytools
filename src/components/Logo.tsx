@@ -26,13 +26,15 @@ const LogoSVG: React.FC<{ size?: number }> = ({ size = 32 }) => (
   </svg>
 );
 
-const Logo: React.FC = () => {
+const Logo: React.FC<{ collapsed?: boolean }> = ({ collapsed = false }) => {
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-      <LogoSVG />
-      <Title level={4} style={{ margin: 0 }}>
-        EasyTools
-      </Title>
+    <div style={{ display: 'flex', alignItems: 'center', gap: collapsed ? 0 : '8px', justifyContent: collapsed ? 'center' : 'flex-start' }}>
+      <LogoSVG size={collapsed ? 32 : 32} />
+      {!collapsed && (
+        <Title level={4} style={{ margin: 0, whiteSpace: 'nowrap' }}>
+          EasyTools
+        </Title>
+      )}
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Layout, Menu, Button, Space, Select, Drawer } from 'antd';
+import { Layout, Menu, Button, Space, Select, Drawer, Tooltip } from 'antd';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { getBrowserLang } from '../i18n'; // 确保这个函数可以获取浏览器语言
@@ -45,69 +45,82 @@ const MainLayout: React.FC = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // 动态设置页面 title
+  React.useEffect(() => {
+    document.title = t('common.siteTitle', { defaultValue: 'EasyTools - 便捷工具集' });
+  }, [t, i18n.language]);
+
   const handleThemeChange = (theme: string) => {
     setCurrentTheme(theme);
   };
 
+  const labelWithTooltip = (label: string) => (
+    !collapsed ?
+    <Tooltip title={label} placement='right'>
+      <span>{label}</span>
+    </Tooltip>
+    : label
+  );
+
   const menuItems = [
     {
       key: '/base64',
-      label: t('base64.title'),
+      label: labelWithTooltip(t('base64.title')),
       icon: <LockOutlined />
     },
     {
       key: '/json',
-      label: t('json.title'),
+      label: labelWithTooltip(t('json.title')),
       icon: <FileTextOutlined />
     },
     {
       key: '/ip',
-      label: t('ip.title'),
+      label: labelWithTooltip(t('ip.title')),
       icon: <GlobalOutlined />
     },
     {
       key: '/image',
-      label: t('image.title'),
+      label: labelWithTooltip(t('image.title')),
       icon: <PictureOutlined />
     },
     {
       key: '/timestamp',
-      label: t('timestamp.title'),
+      label: labelWithTooltip(t('timestamp.title')),
       icon: <ClockCircleOutlined />
     },
     {
       key: '/url',
-      label: t('url.title'),
+      label: labelWithTooltip(t('url.title')),
       icon: <LinkOutlined />
     },
     {
       key: '/regex',
-      label: t('regex.title'),
+      label: labelWithTooltip(t('regex.title')),
       icon: <SearchOutlined />
     },
     {
       key: '/color',
-      label: t('color.title'),
+      label: labelWithTooltip(t('color.title')),
       icon: <BgColorsOutlined />
     },
     {
       key: '/qrcode',
-      label: t('qrcode.title'),
+      label: labelWithTooltip(t('qrcode.title')),
       icon: <QrcodeOutlined />
     },
     {
       key: '/markdown',
-      label: t('markdown.title'),
+      label: labelWithTooltip(t('markdown.title')),
       icon: <FileMarkdownOutlined />
     },
     {
       key: '/number',
-      label: t('number.title'),
+      label: labelWithTooltip(t('number.title')),
       icon: <NumberOutlined />
     },
     {
       key: '/md5',
-      label: t('md5.title'),
+      label: labelWithTooltip(t('md5.title')),
       icon: <SafetyCertificateOutlined />
     }
   ];
@@ -138,13 +151,14 @@ const MainLayout: React.FC = () => {
   const renderMenu = () => (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       <div style={{ padding: '16px', textAlign: 'center' }}>
-        <Logo />
+        <Logo collapsed={collapsed} />
       </div>
       <Menu
         theme="light"
         mode="inline"
         selectedKeys={[location.pathname]}
         items={menuItems}
+        inlineCollapsed={collapsed}
         onClick={({ key }) => {
           navigate(key);
           if (isMobile) {
@@ -154,7 +168,8 @@ const MainLayout: React.FC = () => {
         style={{ 
           flex: 1, 
           overflow: 'auto',
-          width: collapsed ? 80 : 256,
+          width: collapsed ? 80 : 220,
+          minWidth: collapsed ? 80 : 180,
           transition: 'width 0.2s'
         }}
       />
