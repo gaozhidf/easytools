@@ -7,4 +7,14 @@ const isGithubPages = process.env.GITHUB_PAGES === '1';
 export default defineConfig({
   base: isGithubPages ? '/easytools/' : '/',
   plugins: [react()],
+  server: {
+    fs: {
+      allow: ['..']
+    }
+  },
+  optimizeDeps: {
+    exclude: ['@astral-sh/ruff-wasm-web']
+  },
+  // 确保 WASM 文件被正确处理
+  assetsInclude: ['**/*.wasm']
 })

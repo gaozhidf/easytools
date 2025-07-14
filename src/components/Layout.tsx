@@ -17,7 +17,8 @@ import {
   QrcodeOutlined,
   FileMarkdownOutlined,
   NumberOutlined,
-  SafetyCertificateOutlined
+  SafetyCertificateOutlined,
+  CodeOutlined
 } from '@ant-design/icons';
 import Logo from './Logo';
 import ThemeSwitch from './ThemeSwitch';
@@ -127,6 +128,31 @@ const MainLayout: React.FC = () => {
       key: '/codeformat',
       label: labelWithTooltip(t('codeformat.title')),
       icon: <FileTextOutlined />
+    },
+    {
+      key: '/python-formatter',
+      label: labelWithTooltip(t('codeformat.python', 'Python Formatter')),
+      icon: <CodeOutlined />
+    },
+    {
+      key: '/sql-formatter',
+      label: labelWithTooltip(t('codeformat.sql', 'SQL Formatter')),
+      icon: <CodeOutlined />
+    },
+    {
+      key: '/js-formatter',
+      label: labelWithTooltip(t('codeformat.js', 'JS Formatter')),
+      icon: <CodeOutlined />
+    },
+    {
+      key: '/css-formatter',
+      label: labelWithTooltip(t('codeformat.css', 'CSS Formatter')),
+      icon: <CodeOutlined />
+    },
+    {
+      key: '/html-formatter',
+      label: labelWithTooltip(t('codeformat.html', 'HTML Formatter')),
+      icon: <CodeOutlined />
     }
   ];
 

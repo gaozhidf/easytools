@@ -196,6 +196,22 @@
     "description": "支持 Python、SQL 等代码格式化",
     "format": "格式化",
     "inputPlaceholder": "请输入代码...",
-    "outputPlaceholder": "格式化结果..."
+    "outputPlaceholder": "格式化结果...",
+    "doubleQuote": "双引号",
+    "singleQuote": "单引号",
+    "python": "Python 格式化",
+    "sql": "SQL 格式化",
+    "js": "JS 格式化",
+    "css": "CSS 格式化",
+    "html": "HTML 格式化",
+    "pythonDesc": "支持 Python 代码格式化与 Ruff 诊断，单双引号可选。",
+    "sqlDesc": "支持 SQL 代码格式化，自动缩进和美化。",
+    "jsDesc": "支持 JavaScript 代码格式化，单双引号可选。",
+    "cssDesc": "支持 CSS 代码格式化和美化。",
+    "htmlDesc": "支持 HTML 代码格式化和美化。"
+  },
+  "codecompare": {
+    "input": "输入",
+    "output": "输出"
   }
 }

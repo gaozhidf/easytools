@@ -191,6 +191,22 @@
     "description": "Supports formatting for Python, SQL, etc.",
     "format": "Format",
     "inputPlaceholder": "Enter code...",
-    "outputPlaceholder": "Formatted result..."
+    "outputPlaceholder": "Formatted result...",
+    "doubleQuote": "Double Quote",
+    "singleQuote": "Single Quote",
+    "python": "Python Formatter",
+    "sql": "SQL Formatter",
+    "js": "JS Formatter",
+    "css": "CSS Formatter",
+    "html": "HTML Formatter",
+    "pythonDesc": "Supports Python code formatting and Ruff diagnostics, with single/double quote options.",
+    "sqlDesc": "Supports SQL code formatting, auto indentation and beautification.",
+    "jsDesc": "Supports JavaScript code formatting, with single/double quote options.",
+    "cssDesc": "Supports CSS code formatting and beautification.",
+    "htmlDesc": "Supports HTML code formatting and beautification."
+  },
+  "codecompare": {
+    "input": "Input",
+    "output": "Output"
   }
 }

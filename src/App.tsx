@@ -15,6 +15,11 @@ import MarkdownTool from './pages/MarkdownTool';
 import NumberTool from './pages/NumberTool';
 import Md5Tool from './pages/Md5Tool';
 import CodeFormatTool from './pages/CodeFormatTool';
+import PythonFormatter from './pages/PythonFormatter';
+import SQLFormatter from './pages/SQLFormatter';
+import JSFormatter from './pages/JSFormatter';
+import CSSFormatter from './pages/CSSFormatter';
+import HTMLFormatter from './pages/HTMLFormatter';
 
 function App() {
   return (
@@ -35,6 +40,11 @@ function App() {
           <Route path="number" element={<NumberTool />} />
           <Route path="md5" element={<Md5Tool />} />
           <Route path="codeformat" element={<CodeFormatTool />} />
+          <Route path="python-formatter" element={<PythonFormatter />} />
+          <Route path="sql-formatter" element={<SQLFormatter />} />
+          <Route path="js-formatter" element={<JSFormatter />} />
+          <Route path="css-formatter" element={<CSSFormatter />} />
+          <Route path="html-formatter" element={<HTMLFormatter />} />
         </Route>
       </Routes>
     </Router>
